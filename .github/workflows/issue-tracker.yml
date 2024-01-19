@@ -16,15 +16,14 @@ jobs:
               "cards": [
                   {
                       "header": {
-                          "title": "PXF Issue #${{ github.event.issue.number }} ${{ github.event.action }} by ${{ github.event.issue.user.login }}"
+                          "title": "PXF Issue ${{ github.event.action }} by ${{ github.event.issue.user.login }}"
                       },
                       "sections": [
                           {
                               "widgets": [
                                    {
                                      "keyValue": {
-                                          "topLabel": "Title",
-                                          "content": "${{ github.event.issue.title }}"
+                                          "content": "#${{ github.event.issue.number }} ${{ github.event.issue.title }}"
                                       }
                                    },
                                    {
